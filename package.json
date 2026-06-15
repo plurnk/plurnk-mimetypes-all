@@ -1,0 +1,63 @@
+{
+    "name": "@plurnk/plurnk-mimetypes-all",
+    "version": "0.1.0",
+    "description": "Batteries-included bundle for plurnk-service's mimetype handling — installs every first-party non-floor @plurnk/plurnk-mimetypes-* handler (flat) so one dependency surfaces them all to discovery. Pair with @plurnk/plurnk-mimetypes (which carries the floor).",
+    "keywords": [
+        "plurnk",
+        "mimetype",
+        "handler",
+        "bundle",
+        "meta"
+    ],
+    "homepage": "https://github.com/plurnk/plurnk-mimetypes-all#readme",
+    "bugs": {
+        "url": "https://github.com/plurnk/plurnk-mimetypes-all/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/plurnk/plurnk-mimetypes-all.git"
+    },
+    "engines": {
+        "node": ">=25"
+    },
+    "license": "MIT",
+    "author": "@wikitopian",
+    "type": "module",
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "README.md"
+    ],
+    "peerDependencies": {
+        "@plurnk/plurnk-mimetypes": "^0.15.0"
+    },
+    "dependencies": {
+        "@plurnk/plurnk-mimetypes-application-pdf": "0.6.2",
+        "@plurnk/plurnk-mimetypes-text-clojure": "0.2.2",
+        "@plurnk/plurnk-mimetypes-text-cmake": "0.2.2",
+        "@plurnk/plurnk-mimetypes-text-common-lisp": "0.2.2",
+        "@plurnk/plurnk-mimetypes-text-csharp": "0.2.3",
+        "@plurnk/plurnk-mimetypes-text-datalog": "0.3.2",
+        "@plurnk/plurnk-mimetypes-text-diff": "0.1.0",
+        "@plurnk/plurnk-mimetypes-text-dockerfile": "0.1.2",
+        "@plurnk/plurnk-mimetypes-text-erlang": "0.2.2",
+        "@plurnk/plurnk-mimetypes-text-gherkin": "0.1.0",
+        "@plurnk/plurnk-mimetypes-text-graphql": "0.2.2",
+        "@plurnk/plurnk-mimetypes-text-mariadb": "0.3.3",
+        "@plurnk/plurnk-mimetypes-text-nix": "0.1.2",
+        "@plurnk/plurnk-mimetypes-text-perl": "0.1.2",
+        "@plurnk/plurnk-mimetypes-text-plsql": "0.2.3",
+        "@plurnk/plurnk-mimetypes-text-postgresql": "0.3.3",
+        "@plurnk/plurnk-mimetypes-text-prolog": "0.2.2",
+        "@plurnk/plurnk-mimetypes-text-protobuf": "0.3.2",
+        "@plurnk/plurnk-mimetypes-text-r": "0.1.2",
+        "@plurnk/plurnk-mimetypes-text-redis": "0.3.2",
+        "@plurnk/plurnk-mimetypes-text-sparql": "0.2.2",
+        "@plurnk/plurnk-mimetypes-text-sqlite": "0.3.3",
+        "@plurnk/plurnk-mimetypes-text-swift": "0.1.2",
+        "@plurnk/plurnk-mimetypes-text-terraform": "1.0.3",
+        "@plurnk/plurnk-mimetypes-text-tsql": "0.2.3",
+        "@plurnk/plurnk-mimetypes-text-vim": "0.1.0"
+    }
+}
