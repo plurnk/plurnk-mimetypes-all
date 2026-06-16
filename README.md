@@ -10,7 +10,11 @@ Bundles:
 
 | package | mimetype |
 |---|---|
+| `@plurnk/plurnk-mimetypes-application-gguf` | application/x-gguf |
+| `@plurnk/plurnk-mimetypes-application-ipynb` | application/x-ipynb+json |
+| `@plurnk/plurnk-mimetypes-application-jsonl` | application/jsonl |
 | `@plurnk/plurnk-mimetypes-application-pdf` | application/pdf |
+| `@plurnk/plurnk-mimetypes-application-safetensors` | application/x-safetensors |
 | `@plurnk/plurnk-mimetypes-text-clojure` | text/x-clojure |
 | `@plurnk/plurnk-mimetypes-text-cmake` | text/x-cmake |
 | `@plurnk/plurnk-mimetypes-text-common-lisp` | text/x-common-lisp |
@@ -20,7 +24,9 @@ Bundles:
 | `@plurnk/plurnk-mimetypes-text-dockerfile` | text/x-dockerfile |
 | `@plurnk/plurnk-mimetypes-text-erlang` | text/x-erlang |
 | `@plurnk/plurnk-mimetypes-text-gherkin` | text/x-gherkin |
+| `@plurnk/plurnk-mimetypes-text-dotenv` | text/x-dotenv |
 | `@plurnk/plurnk-mimetypes-text-graphql` | application/graphql |
+| `@plurnk/plurnk-mimetypes-text-ini` | text/x-ini |
 | `@plurnk/plurnk-mimetypes-text-mariadb` | text/x-mysql, text/x-mariadb |
 | `@plurnk/plurnk-mimetypes-text-nix` | text/x-nix |
 | `@plurnk/plurnk-mimetypes-text-perl` | text/x-perl |
