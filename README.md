@@ -1,10 +1,12 @@
 # @plurnk/plurnk-mimetypes-all
 
-Batteries-included bundle for [plurnk-service](https://github.com/plurnk/plurnk-service)'s mimetype handling. **It ships no code** — it's a single dependency that pulls in every first-party non-floor `@plurnk/plurnk-mimetypes-*` handler, **flat**, so one install surfaces them all to the framework's `discover()` scan.
+Batteries-included bundle for [plurnk-service](https://github.com/plurnk/plurnk-service)'s mimetype handling. **It ships no code** — it's a single dependency that pulls in every first-party non-floor `@plurnk/plurnk-mimetypes-*` handler **and every tree-sitter grammar package**, **flat**, so one install surfaces them all to the framework's `discover()` scan and resolves every in-registry language's WASM.
 
 ```
 npm i @plurnk/plurnk-mimetypes @plurnk/plurnk-mimetypes-all
 ```
+
+This is all you need for the full catalog — handlers **and** grammars. The framework loads the in-registry tree-sitter languages (python, rust, go, typescript, …) by resolving `@plurnk/plurnk-mimetypes-grammar-*` packages from `node_modules`; depending on them here means they install transitively, so `@graph` code-navigation works in every published consumer install with **zero hand-pinning** (no `tree-sitter-*` devDeps, no `legacy-peer-deps`).
 
 Bundles:
 
