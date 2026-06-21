@@ -1,6 +1,6 @@
 {
     "name": "@plurnk/plurnk-mimetypes-all",
-    "version": "0.5.1",
+    "version": "0.5.2",
     "description": "Batteries-included bundle for plurnk-service's mimetype handling — installs every first-party non-floor @plurnk/plurnk-mimetypes-* handler (flat) so one dependency surfaces them all to discovery. Pair with @plurnk/plurnk-mimetypes (which carries the floor).",
     "keywords": [
         "plurnk",
@@ -75,7 +75,7 @@
         "@plurnk/plurnk-mimetypes-text-dockerfile": "0.2.0",
         "@plurnk/plurnk-mimetypes-text-dotenv": "0.1.0",
         "@plurnk/plurnk-mimetypes-text-erlang": "0.3.0",
-        "@plurnk/plurnk-mimetypes-text-gherkin": "0.1.0",
+        "@plurnk/plurnk-mimetypes-text-gherkin": "0.2.0",
         "@plurnk/plurnk-mimetypes-text-graphql": "0.3.0",
         "@plurnk/plurnk-mimetypes-text-ini": "0.1.0",
         "@plurnk/plurnk-mimetypes-text-mariadb": "0.4.0",
