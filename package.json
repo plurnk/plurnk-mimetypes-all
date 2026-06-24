@@ -1,6 +1,6 @@
 {
     "name": "@plurnk/plurnk-mimetypes-all",
-    "version": "0.5.2",
+    "version": "0.5.3",
     "description": "Batteries-included bundle for plurnk-service's mimetype handling — installs every first-party non-floor @plurnk/plurnk-mimetypes-* handler (flat) so one dependency surfaces them all to discovery. Pair with @plurnk/plurnk-mimetypes (which carries the floor).",
     "keywords": [
         "plurnk",
@@ -36,7 +36,7 @@
         "@plurnk/plurnk-mimetypes-application-gguf": "0.1.0",
         "@plurnk/plurnk-mimetypes-application-ipynb": "0.1.0",
         "@plurnk/plurnk-mimetypes-application-jsonl": "0.1.0",
-        "@plurnk/plurnk-mimetypes-application-pdf": "0.6.2",
+        "@plurnk/plurnk-mimetypes-application-pdf": "0.6.3",
         "@plurnk/plurnk-mimetypes-application-safetensors": "0.1.0",
         "@plurnk/plurnk-mimetypes-grammar-bash": "0.1.0",
         "@plurnk/plurnk-mimetypes-grammar-c": "0.1.0",
