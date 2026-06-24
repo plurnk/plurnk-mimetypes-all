@@ -1,12 +1,12 @@
 # @plurnk/plurnk-mimetypes-all
 
-Batteries-included bundle for [plurnk-service](https://github.com/plurnk/plurnk-service)'s mimetype handling. **It ships no code** — it's a single dependency that pulls in every first-party non-floor `@plurnk/plurnk-mimetypes-*` handler **and every tree-sitter grammar package**, **flat**, so one install surfaces them all to the framework's `discover()` scan and resolves every in-registry language's WASM.
+Batteries-included bundle for [plurnk-service](https://github.com/plurnk/plurnk-service)'s mimetype handling. **It ships no code** — it's a single dependency that pulls in every first-party non-floor `@plurnk/plurnk-mimetypes-*` handler, **every tree-sitter grammar package**, **and the portable embedder**, **flat**, so one install surfaces them all to the framework's `discover()` scan, resolves every in-registry language's WASM, and lights up the embedding channel.
 
 ```
 npm i @plurnk/plurnk-mimetypes @plurnk/plurnk-mimetypes-all
 ```
 
-This is all you need for the full catalog — handlers **and** grammars. The framework loads the in-registry tree-sitter languages (python, rust, go, typescript, …) by resolving `@plurnk/plurnk-mimetypes-grammar-*` packages from `node_modules`; depending on them here means they install transitively, so `@graph` code-navigation works in every published consumer install with **zero hand-pinning** (no `tree-sitter-*` devDeps, no `legacy-peer-deps`).
+This is all you need for the full catalog — handlers, grammars, **and** the embedder. The embedding channel is opt-in at process time (you select channels), but `@plurnk/plurnk-mimetypes-embeddings` ships the model so it's available without a second install; it's hermetic (onnxruntime-web WASM, no native addon, no runtime network) and adds ~16 MB to the install. The framework loads the in-registry tree-sitter languages (python, rust, go, typescript, …) by resolving `@plurnk/plurnk-mimetypes-grammar-*` packages from `node_modules`; depending on them here means they install transitively, so `@graph` code-navigation works in every published consumer install with **zero hand-pinning** (no `tree-sitter-*` devDeps, no `legacy-peer-deps`).
 
 Bundles:
 
@@ -17,6 +17,7 @@ Bundles:
 | `@plurnk/plurnk-mimetypes-application-jsonl` | application/jsonl |
 | `@plurnk/plurnk-mimetypes-application-pdf` | application/pdf |
 | `@plurnk/plurnk-mimetypes-application-safetensors` | application/x-safetensors |
+| `@plurnk/plurnk-mimetypes-embeddings` | embedding channel (portable onnxruntime-web, ~16 MB) |
 | `@plurnk/plurnk-mimetypes-text-clojure` | text/x-clojure |
 | `@plurnk/plurnk-mimetypes-text-cmake` | text/x-cmake |
 | `@plurnk/plurnk-mimetypes-text-common-lisp` | text/x-common-lisp |
