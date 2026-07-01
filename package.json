@@ -100,6 +100,6 @@
         "prepublishOnly": "npm run deps:fresh"
     },
     "devDependencies": {
-        "@plurnk/plurnk-mimetypes": "0.16.0"
+        "@plurnk/plurnk-mimetypes": "^0.16.0"
     }
 }
