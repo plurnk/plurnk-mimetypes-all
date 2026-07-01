@@ -30,7 +30,7 @@
         "README.md"
     ],
     "peerDependencies": {
-        "@plurnk/plurnk-mimetypes": "^0.15.19"
+        "@plurnk/plurnk-mimetypes": "0.16.0"
     },
     "dependencies": {
         "@plurnk/plurnk-mimetypes-application-gguf": "0.1.1",
