@@ -1,6 +1,6 @@
 {
     "name": "@plurnk/plurnk-mimetypes-all",
-    "version": "0.5.8",
+    "version": "0.5.9",
     "description": "Batteries-included bundle for plurnk-service's mimetype handling — installs every first-party non-floor @plurnk/plurnk-mimetypes-* handler (flat) so one dependency surfaces them all to discovery. Pair with @plurnk/plurnk-mimetypes (which carries the floor).",
     "keywords": [
         "plurnk",
@@ -96,7 +96,10 @@
         "@plurnk/plurnk-mimetypes-text-vim": "0.2.1"
     },
     "scripts": {
-        "deps:fresh": "node scripts/deps-fresh.mjs",
+        "deps:fresh": "plurnk-mimetypes-deps-fresh",
         "prepublishOnly": "npm run deps:fresh"
+    },
+    "devDependencies": {
+        "@plurnk/plurnk-mimetypes": "0.16.0"
     }
 }
